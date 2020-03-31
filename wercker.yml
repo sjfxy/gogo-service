@@ -56,6 +56,7 @@ deploy:
        tag: latest
        repository: sinfxy/gogo-service
        registry: https://registry.hub.docker.com
+
    - cng/cf-deploy:
        api: $API
        user: $USER
