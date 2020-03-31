@@ -2,7 +2,27 @@ box: golang
 
 services:
   - mongo
+dev:
+  steps:
+    - setup-go-workspace:
+        package-dir: github.com/sjfxy/gogo-service
 
+    - script:
+        name: env
+        code: env
+
+    - script:
+        name: go get
+        code: |
+          cd $WERCKER_SOURCE_DIR
+          go version
+          go get -u github.com/Masterminds/glide
+          export PATH=$WERCKER_SOURCE_DIR/bin:$PATH
+          glide install
+
+    - internal/watch:
+        code: go run main.go
+        reload: true
 build:
 
   steps:
