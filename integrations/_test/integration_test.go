@@ -9,7 +9,7 @@ import (
 	"testing"
 
 	"github.com/cloudfoundry-community/go-cfenv"
-	. "github.com/cloudnativego/gogo-service/service"
+	. "github.com/sjfxy/gogo-service/service"
 )
 
 var (

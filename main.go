@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"github.com/cloudfoundry-community/go-cfenv"
-	service "github.com/cloudnativego/gogo-service/service"
+	service "github.com/sjfxy/gogo-service/service"
 )
 
 func main() {
