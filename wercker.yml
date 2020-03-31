@@ -50,9 +50,18 @@ deploy:
  steps:
    - internal/docker-push:
        username: $USERNAME
-       password: $PASSWORD
+       password: $SINPASSWORD
        cmd: /pipeline/source/gogo-service
        port: "8080"
        tag: latest
-       repository: cloudnativego/gogo-service
+       repository: sinfxy/gogo-service
        registry: https://registry.hub.docker.com
+   - cng/cf-deploy:
+       api: $API
+       user: $USER
+       password: $PASSWORD
+       org: $ORG
+       space: $SPACE
+       appname: sin-wercker-step-gogoservice
+       docker_image: sinfxy/gogo-service
+
