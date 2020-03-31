@@ -83,6 +83,6 @@ deploy:
        password: $PASSWORD
        org: $ORG
        space: $SPACE
-       appname: sin-service
+       appname: sien-service
        docker_image: sinfxy/gogo-service
 
