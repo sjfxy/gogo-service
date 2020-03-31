@@ -8,6 +8,7 @@ import (
 	service "github.com/sjfxy/gogo-service/service"
 )
 
+//22
 func main() {
 	//调用系统的PORT对应的环境变量 我们可以在构建云的时候可以使用对应的外部的环境变量处理对应的分配的端口号和负载均衡的策略
 	//如果没有的话则默认在云端会启动3000端口的
