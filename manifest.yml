@@ -1,4 +1,4 @@
-applications:
+#applications:
 #- path: .
 #  memory: 512MB
 #  instances: 1
@@ -7,5 +7,5 @@ applications:
 #  command: gogo-service
 #  buildpacks:
 #  - https://github.com/cloudfoundry/go-buildpack.git
-  services:
-   - mongodb
+#  services:
+#   - mongodb
