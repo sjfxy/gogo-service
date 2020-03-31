@@ -9,7 +9,7 @@ import (
 )
 
 var (
-	fakeDBURI = "mongodb://fake.uri@addr:port/guid"
+	fakeDBURI = "mongodb://sin:sj930826@ds149875.mlab.com:49875/CloudFoundry_e4r3t4m5_n6hgr8tt"
 )
 
 func TestAddMatchShowsUpInMongoRepository(t *testing.T) {
