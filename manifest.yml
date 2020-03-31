@@ -1,9 +1,11 @@
-applications:
-- path: .
-  memory: 512MB
-  instances: 1
-  name: gogo-service
-  disk_quota: 1024M
-  command: gogo-service
-  services:
-   - mongodb
+#applications:
+#- path: .
+#  memory: 512MB
+#  instances: 1
+#  name: gogo-service
+#  disk_quota: 1024M
+#  command: gogo-service
+#  buildpacks:
+#  - https://github.com/cloudfoundry/go-buildpack.git
+#  services:
+#   - mongodb
