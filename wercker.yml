@@ -63,6 +63,6 @@ deploy:
        password: $PASSWORD
        org: $ORG
        space: $SPACE
-       appname: sin-wercker-step-gogoservice
+       appname: fxy-gogoservice
        docker_image: sinfxy/gogo-service
 
